@@ -66,8 +66,8 @@ def get_LILLE_values():
 
 
 if __name__ == "__main__":
-    # rows = get_values()
-    rows = get_LILLE_values()
+    rows = get_values()
+    #rows = get_LILLE_values()
     for row in rows:
         print(row)
     cur.close()

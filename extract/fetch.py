@@ -9,8 +9,8 @@ from pathlib import Path
 env_path = Path(__file__).resolve().parent.parent / "config" / ".env"
 load_dotenv(dotenv_path=env_path)
 
-
 API_TOKEN = os.getenv("API_TOKEN")
+
 INSEE_CODE = os.getenv("INSEE_CODE", "75056")  # Paris par défaut
 
 BASE_URL = "https://api.meteo-concept.com/api/forecast/nextHours"
