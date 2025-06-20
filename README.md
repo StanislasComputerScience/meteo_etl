@@ -30,24 +30,26 @@ Ce projet implémente un pipeline **ETL (Extract, Transform, Load)** en Python p
 
 ---
 
-## 📁 Structure du 
+## 📁 Structure du projet
 
+```text
 meteo_etl/
-├── airflow_dags/ # 🔜 DAGs Airflow (pipeline automatique)
+├── airflow_dags/           # 🔜 DAGs Airflow (pipeline automatique)
 ├── config/
-│ └── .env # Token API, INSEE code, credentials
+│   └── .env                # Token API, INSEE code, credentials
 ├── data/
-│ └── create_tables_data.py # Création des tables PostgreSQL
+│   └── create_tables_data.py   # Création des tables PostgreSQL
 ├── extract/
-│ └── fetch_data.py # Récupération via API Météo Concept
+│   └── fetch_data.py       # Récupération via API Météo Concept
 ├── transform/
-│ └── clean_data.py # Nettoyage et formatage des données
+│   └── clean_data.py       # Nettoyage et formatage des données
 ├── load/
-│ └── insert_to_db.py # Insertion dans la base PostgreSQL
-├── visualise.py # Interface Streamlit pour explorer les données
-├── read_data.py # Lecture simple depuis PostgreSQL
-├── requirements.txt # Dépendances Python
-└── README.md # Documentation du projet
+│   └── insert_to_db.py     # Insertion dans la base PostgreSQL
+├── visualise.py            # Interface Streamlit pour explorer les données
+├── read_data.py            # Lecture simple depuis PostgreSQL
+├── requirements.txt        # Dépendances Python
+└── README.md               # Documentation du projet
+
 
 ## ⚙️ Utilisation
 
@@ -90,5 +92,3 @@ Projet réalisé par Rémi LABONNE
 
 ### 📄 Licence
 Ce projet est open-source, sous licence MIT.
-
-
